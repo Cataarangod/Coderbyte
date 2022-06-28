@@ -1,15 +1,15 @@
 function NumberSearch(str) {
 
     // Declare variables
-    var separatedString = str.split('')
     var letters = [];
     var numbers = [];
     var sum = 0;
 
     /*Once we´ve created the empty arrays we can
     now filter and push those separated Items into the lists*/
-    for (var i = 0; i < str.lenght; i++) {
-        var currentItem = separatedString[i];
+
+    for (var i = 0; i < str.length; i++) {
+        var currentItem = str.charAt(i);
         if (isNaN(parseInt(currentItem))) {
             letters.push(currentItem);
         } else {
